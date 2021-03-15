@@ -7,9 +7,15 @@ height in % or px or vh
 
 :root {
   --bodyBgndColor: #101110;
+  --headerBgColor: #416338;
   --bodyFontColor: #d5e3b8;
   --firstBorder: #d5e3b8;
   --headNavBotBor: #fff;
+  --boxShadow: #bbb9b9;
+  --hoverBgColor: #03d9f5;
+  --hoverTextColor: #120b52;
+  --skillsBgColor: #416443;
+  --resumeCardBorder: #fff;
 }
 body {
   height: 100%;
@@ -21,7 +27,9 @@ body {
 header {
   display: flex;
   flex-direction: row;
+  background-color: var(--headerBgColor);
   height: 6.9rem;
+  margin: 0 0 25px 0;
   border-bottom: 1px var(--headNavBotBor) solid;
 }
 #header_sec {
@@ -76,8 +84,12 @@ header {
 }
 
 .head_nav:hover {
-  background-color: #03d9f5;
-  color: #120b52;
+  background-color: var(--hoverBgColor);
+  color: var(--hoverTextColor);
+}
+
+main > section {
+  margin-bottom: 60px;
 }
 #bio {
   display: flex;
@@ -87,7 +99,6 @@ header {
   /*border-style: solid;
   border-width: 5px 1px;
   border-color: #c51111;*/
-  margin-bottom: 20px;
 }
 .about_text,
 .work_text,
@@ -98,17 +109,35 @@ header {
   padding-right: 10px;
   text-align: right;
   border-style: solid;
-  border-width: 0 3px 0 0;
+  border-width: 0 5px 0 0;
   border-color: var(--firstBorder);
 }
+
 .about_pic {
   padding-right: 10px;
-  text-align: right;
+  float: left;
+  display: block;
+  margin: 0 50px;
 }
 .about_nar {
   padding-right: 10px;
-  text-align: right;
+  text-align: left;
 }
+
+.profile_pic {
+  width: 250px;
+  height: 250px;
+  border: 3px rgb(20, 6, 83) solid;
+  border-radius: 20%;
+  box-shadow: 8px 8px 5px var(--boxShadow);
+  display: inline-block;
+}
+
+.hello_world {
+  font-size: 46px;
+  font-weight: 1000;
+}
+
 .work_title {
   /*font-size: 2.5rem;*/
   height: auto;
@@ -120,54 +149,78 @@ header {
   flex-direction: row;
   width: 100%;
   height: auto;
-  border-style: solid;
+  /*border-style: solid;
   border-width: 5px 1px;
-  border-color: #ecf74c;
+  border-color: #ecf74c;*/
 }
 
 .work_history {
   width: 1000px;
-  border-style: solid;
+  /* border-style: solid;
   border-width: 5px 1px 0 0;
-  border-color: #6fe42b;
+  border-color: #6fe42b;*/
 }
 #projects {
   display: flex;
   flex-direction: row;
   width: 100%;
   height: auto;
-  border-style: solid;
+  /* border-style: solid;
   border-width: 5px 1px;
-  border-color: #fff;
+  border-color: #fff;*/
 }
 
+.project_content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  height: auto;
+}
 #contact {
   display: flex;
   flex-direction: row;
   width: 100%;
   height: auto;
-  border-style: solid;
+  /*border-style: solid;
   border-width: 5px 1px;
-  border-color: #fff;
+  border-color: #fff;*/
 }
-
+.contact_content h4 {
+  font-size: 1.75rem;
+  display: inline-block;
+}
+.contact_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  height: auto;
+}
+.contact_img {
+  padding: 0 10px;
+}
 #misc {
   display: flex;
   flex-direction: row;
   width: 100%;
   height: auto;
-  border-style: solid;
+  /* border-style: solid;
   border-width: 5px 1px;
-  border-color: #fff;
+  border-color: #fff;*/
 }
 
-article {
-  /*width: 100%;
-  height: auto;*/
+/*article {
+  width: 100%;
+  height: auto;
   border-style: solid;
   border-width: 5px 1px;
   border-color: #08c46c;
-}
+}*/
 p {
   font-size: 1.6rem;
 }
@@ -186,32 +239,6 @@ hr {
   margin: 0 auto 5px auto;
 }
 
-.profile_div {
-  width: 375px;
-  height: 250px;
-  display: inline-block;
-}
-.profile_pic {
-  width: 250px;
-  height: 250px;
-  border: 3px rgb(20, 6, 83) solid;
-  text-align: center;
-  margin-inline-start: 50px;
-  border-radius: 20%;
-  box-shadow: 8px 8px 5px #444;
-  display: inline-block;
-}
-
-.profile_nar {
-  width: 60%;
-  display: inline-block;
-}
-
-.hello_world {
-  font-size: 46px;
-  font-weight: 1000;
-}
-
 /*  WORK HISTORY EDUCATION AND TRAINING SECTION*/
 .company {
   background-color: #050446;
@@ -224,8 +251,8 @@ hr {
   height: auto;
   text-align: justify;
   border-radius: 0% 25px 0% 25px;
-  border: 2px #ffffff solid;
-  box-shadow: -6px 6px 3px #bbb9b9;
+  border: 2px var(--resumeCardBorder) solid;
+  box-shadow: -6px 6px 3px var(--boxShadow);
 }
 .position_role {
   background-color: #050446;
@@ -237,8 +264,8 @@ hr {
   height: auto;
   text-align: justify;
   border-radius: 25px 0% 25px 0%;
-  border: 2px #ffffff solid;
-  box-shadow: 6px 6px 3px #bbb9b9;
+  border: 2px var(--resumeCardBorder) solid;
+  box-shadow: 6px 6px 3px var(--boxShadow);
 }
 
 .masters,
@@ -253,12 +280,12 @@ hr {
   height: 80px;
   text-align: justify;
   border-radius: 0% 25px 0% 25px;
-  border: 2px #ffffff solid;
-  box-shadow: 6px 6px 3px #bbb9b9;
+  border: 2px var(--resumeCardBorder) solid;
+  box-shadow: 6px 6px 3px var(--boxShadow);
 }
 .undergrad {
   margin-left: 50px;
-  box-shadow: -6px 6px 3px #bbb9b9;
+  box-shadow: -6px 6px 3px var(--boxShadow);
 }
 .masters {
   border-radius: 25px 0% 25px 0%;
@@ -266,13 +293,14 @@ hr {
 .training {
   margin-left: 50px;
   width: 900px;
-  box-shadow: 6px 6px 3px #bbb9b9, -6px 6px 3px #bbb9b9;
+  box-shadow: 6px 6px 3px var(--boxShadow), -6px 6px 3px var(--boxShadow);
 }
 
 .position_role h3,
 .masters h3 {
   font-size: 2.5rem;
-  width: 430px;
+  padding: 0 20px 0 20px;
+  width: 450px;
   height: 25px;
   left: 100px;
   text-align: right;
@@ -281,7 +309,7 @@ hr {
 .company h3,
 .undergrad h3,
 .training h3 {
-  padding: 0 0 0 20px;
+  padding: 0 20px 0 20px;
   font-size: 2.5rem;
   width: 450px;
   height: 25px;
@@ -291,7 +319,8 @@ hr {
 .position_role h4,
 .masters h4 {
   font-size: 2rem;
-  width: 430px;
+  padding: 0 20px 0 20px;
+  width: 450px;
   height: 20px;
   left: 100px;
   text-align: right;
@@ -302,15 +331,15 @@ hr {
 .training h4 {
   padding: 0 0 0 20px;
   font-size: 2rem;
-  width: 400px;
+  width: 450px;
   height: 20px;
   left: 100px;
   text-align: left;
   margin: 0px;
 }
 .masters h5 {
-  font-size: 2rem;
-  width: 430px;
+  font-size: 1.75rem;
+  width: 450px;
   height: 20px;
   left: 100px;
   text-align: right;
@@ -319,7 +348,7 @@ hr {
 .undergrad h5,
 .training h5 {
   padding: 0 0 0 20px;
-  font-size: 2rem;
+  font-size: 1.75rem;
   width: 450px;
   height: 20px;
   left: 100px;
@@ -340,12 +369,12 @@ hr {
 aside {
   float: right;
   position: relative;
-  top: 61px;
+  top: 41px;
   width: 20.5rem;
   height: 100vh;
 }
 .skills_head {
-  background-color: #416443;
+  background-color: var(--skillsBgColor);
   vertical-align: top;
   position: relative;
   display: inline-block;
@@ -355,15 +384,15 @@ aside {
   height: auto;
   text-align: justify;
   border-radius: 25px 25px 25px 25px;
-  border: 2px #ffffff solid;
-  box-shadow: 6px 6px 3px #bbb9b9, -6px 6px 3px #bbb9b9;
+  border: 2px var(--resumeCardBorder) solid;
+  box-shadow: 6px 6px 3px var(--boxShadow), -6px 6px 3px var(--boxShadow);
 }
 .skills_head h3 {
   padding: 0;
   font-size: 2.5rem;
   width: 200px;
   height: auto;
-  border-bottom: 1px #ffffff solid;
+  border-bottom: 1px var(--resumeCardBorder) solid;
   text-align: center;
 }
 .skills_list {
@@ -402,7 +431,7 @@ aside {
   text-align: right;
   overflow: hidden;
   width: var(--w, 50%);
-  color: rgb(255, 200, 0);
+  color: #ffc800;
   z-index: 1;
 }
 
@@ -441,8 +470,8 @@ li {
   padding-right: 1.5rem;
 }
 .foot_nav:hover {
-  background-color: #03d9f5;
-  color: #120b52;
+  background-color: var(--hoverBgColor);
+  color: var(--hoverTextColor);
 }
 
 /*  MEDIA QUERIES: ADJUST LAYOUT FOR VARIOUS SCREEN SIZES  */
@@ -502,8 +531,16 @@ li {
   .contact_text,
   .misc_text {
     flex: 0 1 50px;
-    margin-left: 50px;
+    padding-left: 50px;
     text-align: left;
+    border-style: double;
+    border-width: 0 0 5px 0;
+    margin-bottom: 20px;
+  }
+  .give_me_space::before{
+    content: "\00a0 \00a0 ";
+    font-size: 2.5rem;
+    font-weight: bold;
   }
   .work_text {
     order: 1;
