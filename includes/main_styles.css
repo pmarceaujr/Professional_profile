@@ -170,7 +170,7 @@ main > section {
   border-color: #fff;*/
 }
 
-.project_content{
+.project_content {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -200,6 +200,9 @@ main > section {
   align-items: flex-end;
   width: 100%;
   height: auto;
+}
+.contact_content > article {
+  margin: 0 20px 0 20px;
 }
 .contact_img {
   padding: 0 10px;
@@ -339,6 +342,7 @@ hr {
 }
 .masters h5 {
   font-size: 1.75rem;
+  padding: 0 20px 0 20px;
   width: 450px;
   height: 20px;
   left: 100px;
@@ -537,7 +541,7 @@ li {
     border-width: 0 0 5px 0;
     margin-bottom: 20px;
   }
-  .give_me_space::before{
+  .give_me_space::before {
     content: "\00a0 \00a0 ";
     font-size: 2.5rem;
     font-weight: bold;
@@ -564,7 +568,7 @@ li {
     display: inline-block;
   }
 }
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 750px) {
   header {
     height: auto;
   }
