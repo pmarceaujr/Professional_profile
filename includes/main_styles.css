@@ -280,18 +280,23 @@ article:hover .card_sm {
   padding: 16px 32px;
 }
 .card_text_lg {
-  top: -10rem;
-  left: 5rem;
+  top: -30px;
+  left: 25px;
   height: auto;
-  width: 20rem;
+  width: 250px;
 }
 
 .card_text_sm {
-  top: 0px;
+  top: 10px;
+  left: 15px;
   height: auto;
-  width: 20rem;
+  width: 170px;
 }
 
+figcaption {
+  text-align: center;
+  font-size: 1.6rem;
+}
 /*  WORK HISTORY EDUCATION AND TRAINING SECTION*/
 .company {
   background-color: #050446;
