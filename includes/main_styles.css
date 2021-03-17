@@ -5,6 +5,7 @@ width in % or px or vw
 height in % or px or vh
 */
 
+/*  ROOT SECTION FOR VARIABLES */
 :root {
   --bodyBgndColor: #101110;
   --headerBgColor: #416338;
@@ -26,6 +27,8 @@ body {
   color: var(--bodyFontColor);
   background-color: var(--bodyBgndColor);
 }
+
+/*  HEADER NAVIGATION LINKS */
 header {
   display: flex;
   flex-direction: row;
@@ -91,6 +94,7 @@ header {
   color: var(--hoverTextColor);
 }
 
+/*  MAIN PAGE OUTLINE SECTION */
 main > section {
   margin-bottom: 60px;
 }
@@ -99,7 +103,8 @@ main > section {
   flex-direction: row;
   max-width: 100%;
   height: auto;
-  /*border-style: solid;
+  /*The following code was used in initial layout and for debugging*/
+  /*border-style: solid;  
   border-width: 5px 1px;
   border-color: #c51111;*/
 }
@@ -144,7 +149,6 @@ main > section {
 }
 
 .work_title {
-  /*font-size: 2.5rem;*/
   height: auto;
   margin-bottom: 0px;
   text-align: center;
@@ -154,6 +158,7 @@ main > section {
   flex-direction: row;
   width: 100%;
   height: auto;
+  /*The following code was used in initial layout and for debugging*/
   /*border-style: solid;
   border-width: 5px 1px;
   border-color: #ecf74c;*/
@@ -161,6 +166,7 @@ main > section {
 
 .work_history {
   width: 1000px;
+  /*The following code was used in initial layout and for debugging*/
   /* border-style: solid;
   border-width: 5px 1px 0 0;
   border-color: #6fe42b;*/
@@ -170,9 +176,6 @@ main > section {
   flex-direction: row;
   width: 100%;
   height: auto;
-  /* border-style: solid;
-  border-width: 5px 1px;
-  border-color: #fff;*/
 }
 
 .project_content {
@@ -185,80 +188,12 @@ main > section {
   width: 100%;
   height: auto;
 }
-.project_content > article {
-  margin: 10px 20px 10px 20px;
-}
 
-.project_img {
-  opacity: 1;
-  display: block;
-  transition: 0.5s ease;
-  backface-visibility: hidden;
-}
-
-article:hover .project_img {
-  transition: transform 1.5s;
-  transform: scale(1.25);
-  opacity: 0.2;
-}
-article:hover .card_lg,
-article:hover .card_sm {
-  opacity: 1;
-}
-.card_lg {
-  opacity: 0;
-  position: relative;
-  top: -150px;
-  height: auto;
-  width: 20rem;
-  text-align: center;
-}
-
-.card_text_lg {
-  border-radius: 0% 25px 0% 25px;
-  border: 2px var(--resumeCardBorder) solid;
-  box-shadow: -6px 6px 3px var(--boxShadow);
-  position: absolute;
-  top: -10rem;
-  left: 5rem;
-  height: auto;
-  width: 20rem;
-  background-color: var(--textCardBgColor);
-  color: white;
-  font-size: 1.6rem;
-  padding: 16px 32px;
-}
-
-.card_sm {
-  opacity: 0;
-  position: relative;
-  top: -15rem;
-  height: auto;
-  width: 20rem;
-  text-align: center;
-}
-
-.card_text_sm {
-  border-radius: 0% 25px 0% 25px;
-  border: 2px var(--resumeCardBorder) solid;
-  box-shadow: -6px 6px 3px var(--boxShadow);
-  position: absolute;
-  top: 0px;
-  height: auto;
-  width: 20rem;
-  background-color: var(--textCardBgColor);
-  color: white;
-  font-size: 1.6rem;
-  padding: 16px 32px;
-}
 #contact {
   display: flex;
   flex-direction: row;
   width: 100%;
   height: auto;
-  /*border-style: solid;
-  border-width: 5px 1px;
-  border-color: #fff;*/
 }
 .contact_content h4 {
   font-size: 1.75rem;
@@ -283,18 +218,8 @@ article:hover .card_sm {
   flex-direction: row;
   width: 100%;
   height: auto;
-  /* border-style: solid;
-  border-width: 5px 1px;
-  border-color: #fff;*/
 }
 
-/*article {
-  width: 100%;
-  height: auto;
-  border-style: solid;
-  border-width: 5px 1px;
-  border-color: #08c46c;
-}*/
 p {
   font-size: 1.6rem;
 }
@@ -311,6 +236,60 @@ hr {
   border-bottom-color: #0e90cc;
   width: 25%;
   margin: 0 auto 5px auto;
+}
+
+/*  PROJECTS CONFIGURATION SECTION   */
+.project_content > article {
+  margin: 10px 20px 10px 20px;
+}
+
+.project_img {
+  opacity: 1;
+  display: block;
+}
+
+article:hover .project_img {
+  transition: transform 1.5s;
+  transform: scale(1.25);
+  opacity: 0.2;
+}
+article:hover .card_lg,
+article:hover .card_sm {
+  opacity: 1;
+  transition: transform 1.5s;
+}
+
+.card_sm,
+.card_lg {
+  opacity: 0;
+  position: relative;
+  top: -15rem;
+  height: auto;
+  width: 20rem;
+  text-align: center;
+}
+.card_text_sm,
+.card_text_lg {
+  border-radius: 0% 25px 0% 25px;
+  border: 2px var(--resumeCardBorder) solid;
+  box-shadow: -6px 6px 3px var(--boxShadow);
+  position: absolute;
+  background-color: var(--textCardBgColor);
+  color: white;
+  font-size: 1.6rem;
+  padding: 16px 32px;
+}
+.card_text_lg {
+  top: -10rem;
+  left: 5rem;
+  height: auto;
+  width: 20rem;
+}
+
+.card_text_sm {
+  top: 0px;
+  height: auto;
+  width: 20rem;
 }
 
 /*  WORK HISTORY EDUCATION AND TRAINING SECTION*/
