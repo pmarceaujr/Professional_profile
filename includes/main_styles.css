@@ -210,6 +210,20 @@ main > section {
 .contact_content > article {
   margin: 0 20px 0 20px;
 }
+
+.contact_content > article > a {
+  font-size: 1.75rem;
+  padding: 0 5px;
+  color: var(--bodyFontColor);
+}
+
+.anchor_text:hover {
+  font-size: 1.75rem;
+  padding: 0 5px;
+  background-color: var(--hoverBgColor);
+  color: var(--hoverTextColor);
+  border-radius: 5px;
+}
 .contact_img {
   padding: 0 10px;
 }
