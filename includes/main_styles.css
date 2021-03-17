@@ -16,6 +16,7 @@ height in % or px or vh
   --hoverTextColor: #120b52;
   --skillsBgColor: #416443;
   --resumeCardBorder: #fff;
+  --textCardBgColor: #4d1212;
   --fontFamily: "ubuntu", Sans-Serif;
 }
 body {
@@ -188,6 +189,68 @@ main > section {
   margin: 10px 20px 10px 20px;
 }
 
+.project_img {
+  opacity: 1;
+  display: block;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+article:hover .project_img {
+  transition: transform 1.5s;
+  transform: scale(1.25);
+  opacity: 0.2;
+}
+article:hover .card_lg,
+article:hover .card_sm {
+  opacity: 1;
+}
+.card_lg {
+  opacity: 0;
+  position: relative;
+  top: -150px;
+  height: auto;
+  width: 20rem;
+  text-align: center;
+}
+
+.card_text_lg {
+  border-radius: 0% 25px 0% 25px;
+  border: 2px var(--resumeCardBorder) solid;
+  box-shadow: -6px 6px 3px var(--boxShadow);
+  position: absolute;
+  top: -10rem;
+  left: 5rem;
+  height: auto;
+  width: 20rem;
+  background-color: var(--textCardBgColor);
+  color: white;
+  font-size: 1.6rem;
+  padding: 16px 32px;
+}
+
+.card_sm {
+  opacity: 0;
+  position: relative;
+  top: -15rem;
+  height: auto;
+  width: 20rem;
+  text-align: center;
+}
+
+.card_text_sm {
+  border-radius: 0% 25px 0% 25px;
+  border: 2px var(--resumeCardBorder) solid;
+  box-shadow: -6px 6px 3px var(--boxShadow);
+  position: absolute;
+  top: 0px;
+  height: auto;
+  width: 20rem;
+  background-color: var(--textCardBgColor);
+  color: white;
+  font-size: 1.6rem;
+  padding: 16px 32px;
+}
 #contact {
   display: flex;
   flex-direction: row;
