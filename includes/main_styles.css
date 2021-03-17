@@ -16,10 +16,11 @@ height in % or px or vh
   --hoverTextColor: #120b52;
   --skillsBgColor: #416443;
   --resumeCardBorder: #fff;
+  --fontFamily: "ubuntu", Sans-Serif;
 }
 body {
   height: 100%;
-  font-family: "ubuntu", Sans-Serif;
+  font-family: var(--fontFamily);
   font-size: 1.4rem;
   color: var(--bodyFontColor);
   background-color: var(--bodyBgndColor);
@@ -31,6 +32,8 @@ header {
   height: 6.9rem;
   margin: 0 0 25px 0;
   border-bottom: 1px var(--headNavBotBor) solid;
+  background-image: url(../images/html1.png);
+  background-size: cover;
 }
 #header_sec {
   display: flex;
@@ -64,7 +67,6 @@ header {
   height: 6.9rem;
   width: 50%;
   font-weight: bold;
-  margin-bottom: 30px;
 }
 
 .nav_head_links {
@@ -111,6 +113,8 @@ main > section {
   border-style: solid;
   border-width: 0 5px 0 0;
   border-color: var(--firstBorder);
+  background-image: url(../images/html1.png);
+  background-size: cover;
 }
 
 .about_pic {
@@ -180,6 +184,10 @@ main > section {
   width: 100%;
   height: auto;
 }
+.project_content > article {
+  margin: 10px 20px 10px 20px;
+}
+
 #contact {
   display: flex;
   flex-direction: row;
