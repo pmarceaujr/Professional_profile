@@ -33,7 +33,7 @@ header {
   display: flex;
   flex-direction: row;
   background-color: var(--headerBgColor);
-  height: 6.9rem;
+  height: auto;
   margin: 0 0 25px 0;
   border-bottom: 1px var(--headNavBotBor) solid;
   background-image: url(../images/html1.png);
@@ -43,7 +43,7 @@ header {
   display: flex;
   flex-direction: column;
   font-size: 40px;
-  height: 6.9rem;
+  height: auto;
   width: 50%;
   font-weight: bold;
   position: relative;
@@ -51,24 +51,25 @@ header {
 .head1,
 .head2 {
   width: 100%;
+  height: auto;
   font-weight: bold;
   display: inline-block;
   margin-left: 50px;
 }
 .head1 {
   font-size: 4rem;
-  height: 4rem;
+  height: auto;
 }
 .head2 {
   font-size: 2.5rem;
-  height: 2.9rem;
+  height: auto;
 }
 #nav_header {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
   font-size: 4rem;
-  height: 6.9rem;
+  height: auto;
   width: 50%;
   font-weight: bold;
 }
@@ -136,7 +137,7 @@ main > section {
 
 .profile_pic {
   width: 250px;
-  height: 250px;
+  height: 320px;
   border: 3px rgb(20, 6, 83) solid;
   border-radius: 20%;
   box-shadow: 8px 8px 5px var(--boxShadow);
@@ -301,7 +302,7 @@ article:hover .card_sm {
 }
 
 .card_text_sm {
-  top: 10px;
+  top: 0px;
   left: 15px;
   height: auto;
   width: 170px;
@@ -565,16 +566,16 @@ li {
 }
 @media screen and (min-width: 680px) and (max-width: 1132px) {
   header {
-    height: 9.8rem;
+    height: auto;
   }
   #header_sec {
-    height: 9.8rem;
+    height: auto;
   }
   .head2 {
-    height: 5.8rem;
+    height: auto;
   }
   #nav_header {
-    height: 9.8rem;
+    height: auto;
   }
 }
 @media screen and (max-width: 1000px) {
