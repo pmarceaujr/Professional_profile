@@ -548,6 +548,16 @@ li {
   color: var(--hoverTextColor);
 }
 
+.repoLink:link {
+  color: var(--bodyFontColor);
+  font-size: 1.5rem;
+}
+
+.repoLink:visited {
+  color: var(--bodyFontColor);
+  font-size: 1.5rem;
+}
+
 /*  MEDIA QUERIES: ADJUST LAYOUT FOR VARIOUS SCREEN SIZES  */
 @media screen and (max-width: 1326px) {
   .training,
