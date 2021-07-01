@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Bootstrap Core CSS -->
+        <link href="./includes/bootstrap.min.css" rel="stylesheet" />
+        <link href="./includes/stylish-portfolio.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./includes/css_resets.css" />
     <link rel="stylesheet" href="./includes/main_styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+
     <title>Paul Marceau</title>
   </head>
   <body>
@@ -21,10 +27,13 @@
           <a class="head_nav" href="#bio">Home</a>
         </div>
         <div class="nav_head_links">
-          <a class="head_nav" href="#work">Resume</a>
+          <a class="head_nav" href="#projects">Projects</a>
         </div>
         <div class="nav_head_links">
-          <a class="head_nav" href="#projects">Projects</a>
+          <a class="head_nav" href="#work">Skills</a>
+        </div>
+        <div class="nav_head_links">
+          <a class="head_nav" href="#resume">Resume</a>
         </div>
         <div class="nav_head_links">
           <a class="head_nav" href="#contact">Contact</a>
@@ -69,226 +78,108 @@
         </article>
         <!--END BIO SECTION-->
       </section>
+      <!--BEGIN PROJECTS SECTION-->
+      <section id="projects">
+        <article class="projects_text">
+          <h2>My</h2>
+          <span class="give_me_space"><h2>Projects</h2></span>
+        </article>
+        <section class="project_content">
+          <article>
+            <figure>
+            <a href="http://www.themarceaus.net/Projects/RestaurantList/login.php/"
+              ><img class="project_img" alt="Restaurant List App" src="./images/restlist.png" width="300" height="300"
+            /></a>
+            <div class="card_lg">
+              <a href="http://www.themarceaus.net/Projects/RestaurantList/login.php/"><div class="card_text_lg">
+                <p>A fun side project I did to track restaurants that I would like to try. Userid/password: demo.</p>
+              </div>
+            </div></a>
+          <figcaption>Restaurant List App</figcaption>
+          <figcaption>HTML | CSS | JavaScript | PHP | MySQL</figcaption>
+          </figure>
+          </article>
+          <article>
+            <figure>
+              <a href="https://intense-citadel-38855.herokuapp.com/"
+              ><img class="project_img" alt="Github" src="./images/loggedIn.png" width="300" height="300"  /></a>
+            <div class="card_lg">
+              <a href="https://intense-citadel-38855.herokuapp.com/"><div class="card_text_lg">
+                <p>A Tech Blog website for adding posts and tracking comments. Member only area requires sign-in.</p>
+              </div>
+            </div></a>
+            <figcaption>Tech Blog App</figcaption>
+            <figcaption><a href="https://github.com/pmarceaujr/CMS-StyleBlogSite" class="repoLink">Link to Repo</a></figcaption>
+            <figcaption>HTML | CSS | JavaScript | NODE | MySQL</figcaption>
+          </figure>
+          </article>          
+          <article>
+            <figure>
+            <a href="https://unh-bootcamp-projects.github.io/project-1-group-c/">  
+            <img class="project_img" alt="A YELP spin-off" src="./images/notYelp.png" width="200" height="150" />
+              </a>
+            <div class="card_sm">
+              <a href="https://unh-bootcamp-projects.github.io/project-1-group-c/"><div class="card_text_sm"><p>An API consuming app similar to YELP.</p></div>
+            </div></a>
+            <figcaption>Fun with APIs</figcaption>
+            <figcaption><a href="https://github.com/UNH-Bootcamp-Projects/project-1-group-c" class="repoLink">Link to Repo</a></figcaption>
+            <figcaption>HTML | CSS | jQuery | Google APIs</figcaption>
+          </figure>
+          </article>
+          <article>
+            <figure>
+              <a href="https://pmarceaujr.github.io/WeatherApp/">
+            <img class="project_img" alt="Weather Dashboard" src="./images/weather.png" width="200" height="200" />
+            </a>
+            <div class="card_sm">
+              <a href="https://pmarceaujr.github.io/WeatherApp/"><div class="card_text_sm">A fun API weather Dashboard app.</div>
+            </div></a>
+            <figcaption>JavaScript with dynamic HTML </figcaption>
+            <figcaption><a href="https://github.com/pmarceaujr/WeatherApp" class="repoLink">Link to Repo</a></figcaption>
+            <figcaption>HTML | CSS | JavaScript | jQuery</figcaption>
+          </figure>
+          </article>
+          <article>
+            <figure>
+              <a href="https://pmarceaujr.github.io/RockPaperScissors/">
+            <img class="project_img" alt="Rock Paper Scissors" src="./images/RPS.png" width="200" height="200" />
+          </a>
+            <div class="card_sm">
+              <a href="https://pmarceaujr.github.io/RockPaperScissors/"><div class="card_text_sm">My niece loves to play Rock Paper Scissors!</div>
+            </div></a>
+            <figcaption>Rock Paper Scissors</figcaption>
+            <figcaption><a href="https://github.com/pmarceaujr/RockPaperScissors" class="repoLink">Link to Repo</a></figcaption>
+            <figcaption>HTML | CSS | JavaScript </figcaption>
+          </figure>
+          </article>
+          <article>
+            <figure>
+              <a href="https://pmarceaujr.github.io/FunWithDice/">
+            <img class="project_img" alt="Fun With Dice" src="./images/funwithdice.png" width="200" height="200" />
+          </a>
+            <div class="card_sm">
+              <a href="https://pmarceaujr.github.io/FunWithDice/"><div class="card_text_sm">A silly dice game for my niece!</div>
+            </div></a>
+            <figcaption>Fun with dice</figcaption>
+            <figcaption><a href="http://github.com/pmarceaujr/FunWithDice/" class="repoLink">Link to Repo</a></figcaption>
+            <figcaption>HTML | CSS | JavaScript </figcaption>
+          </figure>
+          </article>
+
+        </section>
+        <!--END PROJECTS SECTION-->
+      </section>      
       <!--BEGIN WORK HISTORY SECTION-->
       <section id="work">
         <article class="work_text">
           <h2>My</h2>
-          <span class="give_me_space"><h2>Resume</h2></span>
-          <a href="./includes/resume_pmarceau.pdf" download>
-            <img src="./images/downpdf.png" alt="Resume">
-          </a>
+          <span class="give_me_space"><h2>Skills</h2></span>
+          <span class="give_me_space"><h2>Education</h2>
+          <span class="give_me_space"><h2>Training</h2></span>
         </article>
         <section class="work_history">
           <article class="work_title">
-            <h2>Work Experience</h2>
-            <hr />
-          </article>
-          <article class="company">
-            <h3>PeopleGIS</h3>
-            <h4>Woburn, MA</h4>
-            <p>
-              <img class='logopics' src="./images/peoplegis.jpg" alt="peoplegis logo">
-            </p>
-          </article>
-          <article class="position_role">
-            <h3>Project Implementation Manager</h3>
-            <h4>December 2019 - Present</h4>
-            <p>
-              Onboard new clients and work closely with client contacts to ensure a smooth and successful implementation of the PeopleGIS web based suite (SaaS). 
-              Conduct requirements gathering meetings, preform gap analysis, create design specifications, create implementation project plan and perform implementation. 
-              Post-implementation activities are conduct client training and performance assessment with the goal of both short and long-term success with the software.
-               Periodically follow-up with clients to ensure continued success, satisfaction, and growth.</br></br>
 
-•	Provide production support to all clients; quickly and efficiently close all requests within SLA limits.</br></br>
-•	Write PostgreSQL stored procedures to support GIS Map layers, Jasper Reports and client business requirements.</br></br>
-•	Perform custom UI configurations using HTML, CSS, jQuery and JavaScript to satisfy client business requirements.</br></br>
-
-            </p>
-          </article>
-          <article class="company">
-            <h3>Vestmark, Inc.</h3>
-            <h4>Wakefield, MA</h4>
-            <p>
-             <img class='logopics' src="./images/Vestmark.jpg" alt="vestmark logo">
-            </p>
-          </article>
-          <article class="position_role">
-            <h3>Implementation Engineer</h3>
-            <h4>January 2016 - September 2019</h4>
-            <p>Member of the implementation services team, responsible for all aspects of execution and delivery for new client implementations.  
-              Significant client contact and coordination with internal operations and technology teams to implement and service new clients. 
-              Work with clients to develop and manage the implementation plan, including platform configuration, custom integrations, data conversions, 
-              custom configuration and testing.</br></br>
-
-              •	Technical and functional analysis of customer implementation and integration requirements.</br></br>
-              •	Documentation of implementation requirements and expected effort.</br></br>
-              •	Configuration and setup of the managed accounts (SaaS) platform.</br></br>
-              •	Proactive identification of issues such as: scope changes, and progress against project plan.</br></br>
-              •	Management of client expectations utilizing excellent communication skills.</br></br>
-              •	Provide technical support during and post implementation and deliver superior customer service.</br></br>
-              •	Build custom features using HTML, CSS and JavaScript to support customer business requirements.</br></br>
-              
-
-            </p>
-          </article>
-          <article class="company">
-            <h3>Philips</h3>
-            <h4>Andover, MA</h4>
-            <p>
-              <img class='logopics' src="./images/philips.jpg" alt="philips logo">
-            </p>
-          </article>
-          <article class="position_role">
-            <h3>Product Support Engineer</h3>
-            <h4>May 2011 - January 2016</h4>
-            <p>
-              Provide 3rd-level support to 2nd level support engineers, end-users and administrators of Philips browser based imaging products via phone, 
-              e-mail and interactive web support. Competently and quickly determine root cause of problem and provide problem resolution using available tools and 
-              knowledge of the Philips system while providing the highest level of customer satisfaction. Problems can range from SQL and database issues to network 
-              and storage issues to software or configuration issues.  Create test systems using VMware to mimic customer environments to allow for research on critical, 
-              one-of-a-kind issues.  Work as a liaison between software engineering and marketing to document known issues and resolutions.  Conduct on-site 
-              diagnostic sessions and re-installations of software to correct additional software anomalies.</br></br>
-
-•	Responsible for resolving application upgrade issues for all customers: world-wide.</br></br>
-•	Created SQL scripts for data validation and issue identification.</br></br>
-•	Authored knowledge-base articles for the various application related issues, which results in a quicker resolution.</br></br>
-•	Created tools using VB and SQL stored procedures to execute frequently performed tasks to increase overall productivity of level 3 support engineers and allow them to close customer support cases more efficiently.</br></br>
-•	Work with engineers to identify UI bugs, design solution and implement fixes using HTML, CSS and JavaScript.</br></br>
-•	Lead biweekly conference calls to discuss issues, cases, problems or topics of concern with other team members and level 2 support engineers.</br></br>
-
-            </p>
-          </article>
-          <article class="company">
-            <h3>Scribe Software</h3>
-            <h4>Bedford, NH</h4>
-            <p>
-              <img class='logopics' src="./images/scribe.jpg" alt="scribe logo">
-            </p>
-          </article>
-          <article class="position_role">
-            <h3>Technical Support Analyst</h3>
-            <h4>March 2010 - May 2011</h4>
-            <p>
-              Support customer needs via web sessions, phone, or email, actively identifying and resolving issues ranging from SQL stored procedure and syntax 
-              matters to improper configurations. Escalate irresolvable issues to development team and document process leading to customer issue in detail to 
-              enhance existing knowledge base. Reproduce specific issues in testing environments and document steps to reproduce issues for development team. 
-              Update customers regarding solutions and hot fixes to restore full system functionality.</br></br>
-
-•	Reduced number of calls transferred to 2nd-level support by training Level 1 tech support to understand and troubleshoot formula syntax issues.</br></br>
-•	Successfully closed 98% of cases within SLA time-frame, and 85% of cases within 8 hours. </br></br>
-
-            </p>
-          </article>
-          <article class="company">
-            <h3>CIBER, Inc.</h3>
-            <h4>Woburn, MA</h4>
-            <p>
-              <img class='logopics' src="./images/ciber.png" alt="ciber logo">
-            </p>
-          </article>
-          <article class="position_role">
-            <h3>Siebel Consultant</h3>
-            <h4>March 2006 - January 2010</h4>
-            <p>
-              Configured Siebel’s web based application per technical specifications laid out by business analysts for specific client needs. Partnered with end users to
-               evaluate how clients were using Siebel and how best to improve system performance. Performed needs assessments, acquired user requirements, created technical 
-               specification documents, wrote code, devised test plans, implemented bug fixes, and completed test plans to enhance customer satisfaction and overall system 
-               operability. Provided end-user training on new versions of software.  Evaluated production issues during on-call rotation and identified origin of problems 
-               as they arose. Interviewed new offshore team when hired and coordinated efforts of team when in place. </br></br>
-
-              •	Completed and implemented all development tasks (coding, testing, bug fixing) on time and with minimal defects.</br></br>
-              •	Met or exceeded all customer expectations by creating and executing efficient test scripts, ensuring client requested changes were completed as expected.</br></br>
-              •	Provided level 2 and level 3 on-call production support for all issues related to the Siebel application.</br></br>
-              •	Resolve production issues in the time frame stated in the SLA, based on the severity of the issue.</br></br>
-              •	Senior developer/team lead on a team of 8 developers; oversee configuration and ensure changes adhere to Siebel Systems' best practices; work with team members to propose alternative recommendations when business requirements cannot follow best practices.</br></br>
-              •	Work with BA team and end users to gather and review requirements; use the requirements to create detailed design documents; advise the BA team and end users regarding technical feasibility, usability and performance concerns regarding new requirements.</br></br>
-              
-            </p>
-          </article>
-          <article class="company">
-            <h3>Siebel Systems, Inc</h3>
-            <h4>Burlington, MA</h4>
-            <p>
-              <img class='logopics' src="./images/Siebel CRM.jpg" alt="siebel logo">
-            </p>
-          </article>
-          <article class="position_role">
-            <h3>Principal Siebel Consultant</h3>
-            <h4>November 1999 - March 2006</h4>
-            <p>
-              Traveled to customer sites for up to 9 months to analyze business processes, meet with key stakeholders, determine requirements, and rank requirements 
-              compared to application performance. Prioritized program elements and created detailed program scope and design specification documentation. Performed necessary 
-              configuration changes within Siebel’s web based application environment to achieve business goals for clients. Evaluated system performance pre- and post-implementation 
-              to debug and reduce errors.</br></br>
-              •	Accelerated Configuration Reviews by writing custom SQL stored procedures to automate repetitive tasks.</br></br>
-•	Designated “go-to” person in Expert Services group due to exceptional grasp of issues related to industry application.</br></br>
-•	Awarded Siebel Customer Certified Consultant award based on positive customer feedback.</br></br>
-•	Performed custom configuration using HTML, CSS, VB-Script and Siebel Script (script language based on JavaScript).</br></br>
-
-            </p>
-          </article>
-          <article class="company">
-            <h3>Siebel Systems, Inc</h3>
-            <h4>Burlington, MA</h4>
-            <p>
-              <img class='logopics' src="./images/Siebel CRM.jpg" alt="siebel logo">
-            </p>
-          </article>
-          <article class="position_role">
-            <h3>Senior Configuration Specialist</h3>
-            <h4>November 1999 - March 2006</h4>
-            <p>
-              Partnered with clients before, during, and after installation to ensure smooth communication and clear expectations during implementation. 
-              Identified potential performance, data integrity, maintenance, or upgrade issues in advance and mitigated as necessary pre-installation. 
-              Adhered closely to existing best practices in new implementations. Completed configuration and scripting reviews before client would go live with 
-              new implementations, partnering with development team to minimize potential flaws. Traveled to client sites for installs, to support client needs,
-               evaluate new issues, and provide solutions to client. Performed on-site training for clients to show how best to use, configure, maintain, and upgrade 
-               application.</br></br>
-
-•	Accelerated Configuration Reviews by writing custom SQL stored procedures to automate repetitive tasks.</br></br>
-•	Designated “go-to” person in Expert Services group due to exceptional grasp of issues related to industry application.</br></br>
-•	Awarded Siebel Customer Certified Consultant award based on positive customer feedback.</br></br>
-•	Performed custom configuration using HTML, CSS, VB-Script and Siebel Script (script language based on JavaScript).</br></br>
-
-            </p>
-          </article>
-          <article class="company">
-            <h3>PricewaterhouseCoopers, LLP</h3>
-            <h4>Manchester, NH</h4>
-            <p>
-              <img class='logopics' src="./images/pwc.jpg" alt="pricewaterhousecoopers logo">
-            </p>
-          </article>
-          <article class="position_role">
-            <h3>Senior Consultant</h3>
-            <h4>January 1997 - November 1999</h4>
-            <p>
-              Developed customized applications for clients utilizing PowerBuilder or Visual Basic for GUIs and Oracle or SQL Server for DBs. Coded, 
-              tested and implemented stored procedures and triggers in SQL Server and Oracle DBs (Utilized PL/SQL in Oracle DB).  Analyzed operational 
-              tendencies and business processes then created appropriate responses to maximize efficiency and usability within programs. Learned ASSEMBLER 
-              and COBOL to code changes for Y2K into mainframe.  </br></br>
-
-
-            </p>
-          </article>
-          <article class="company">
-            <h3>Configure It Out Tech. Solutions</h3>
-            <h4>Merrimack, NH</h4>
-            <p>
-              
-            </p>
-          </article>
-          <article class="position_role">
-            <h3>Consultant (part time)</h3>
-            <h4>June 2006 - January 2016</h4>
-            <p>
-              Designed and installed 25 client network running Windows XP clients and Windows Server 2003.  Upgraded the Medical Records application 
-              from an outdated Access DB to MS SQL Server 2005. Created routine maintenance jobs to more efficiently manage the DB.  Implemented HIPAA 
-              policy to insure security of network, data and applications, in accordance with the technical safeguards suggested in the HIPAA act.  
-              Familiar with HL7 standards.  Installed and maintained all office equipment to include PCs, server, scanners, printers, back-up devices, 
-              as well as performed software evaluation, installation, upgrades, training and maintenance. </br></br>
-            </p>
-          </article>
           <article class="work_title">
             <h2>Education</h2>
             <hr />
@@ -322,155 +213,191 @@
             <h4>The Complete Web Development Bootcamp</h4>
             <h5>Full Stack Developer Certificate</h5>
           </article>
-        </section>
-        <section class="skills">
+        <section  class='work_history'>
           <!--  BEGIN ASIDE SECTION-->          
-          <aside>
-            <div class="skills_head">
-              <h3>SKILLS</h3>
-              <div>
-                <ul class="skills_list">
-                  <li>
-                    <div class="star_skills">HTML</div>
-                    <div class="stars" style="--w: 80%"></div>
-                  </li>
-                  <li>
-                    <div class="star_skills">CSS</div>
-                    <div class="stars" style="--w: 80%"></div>
-                  </li>
-                  <li>
-                    <div class="star_skills">Bootstrap</div>
-                    <div class="stars" style="--w: 80%"></div>
-                  </li>
-                  <li>
-                    <div class="star_skills">Foundation</div>
-                    <div class="stars" style="--w: 70%"></div>
-                  </li> 
-                  <li>
-                    <div class="star_skills">JavaScript</div>
-                    <div class="stars" style="--w: 80%"></div>
-                  </li>
-                  <li>
-                    <div class="star_skills">jQuery</div>
-                    <div class="stars" style="--w: 75%"></div>
-                  </li>
-                  <li>
-                    <div class="star_skills">SQL</div>
-                    <div class="stars" style="--w: 80%"></div>
-                  </li>
-                  <li>
-                    <div class="star_skills">GIT/GITHUB</div>
-                    <div class="stars" style="--w: 75%"></div>
-                  </li>
-                  <li>
-                    <div class="star_skills">APIs</div>
-                    <div class="stars" style="--w: 50%"></div>
-                  </li>
-                  <li>
-                    <div class="star_skills">NODE.JS</div>
-                    <div class="stars" style="--w: 25%"></div>
-                  </li>
-                  <li>
-                    <div class="star_skills">REACT</div>
-                    <div class="stars" style="--w: 25%"></div>
-                  </li>
-                  <li>
-                    <div class="star_skills">Python</div>
-                    <div class="stars" style="--w: 30%"></div>
-                  </li>
-                  <li>
-                    <div class="star_skills">JAVA</div>
-                    <div class="stars" style="--w: 20%"></div>
-                  </li>
-                </ul>
+          <section >
+            <div class="container ">
+              <div class="content-section-heading">
+                <!-- <h3 class="text-secondary mb-0">Services</h3> -->
+                <h2 class="d-flex justify-content-center">Skills</h2>
+                <hr />
+              </div>
+              <div class="row">
+                <div class="col mb-5 mb-lg-0">
+                  <span class="service-icon rounded-circle mx-auto mb-1 mt-3">
+                    <i class="devicon-html5-plain colored"></i>
+                  </span>
+                  <h4>
+                    <strong>HTML</strong>
+                  </h4>
+                </div>
+                <div class="col mb-5 mb-lg-0">
+                  <span class="service-icon rounded-circle mx-auto mb-1 mt-3">
+                    <i class="devicon-css3-plain colored"></i>
+                  </span>
+                  <h4>
+                    <strong>CSS</strong>
+                  </h4>
+                </div>                
+                <div class="col mb-5 mb-lg-0">
+                  <span class="service-icon rounded-circle mx-auto mb-1 mt-3">
+                    <i class="devicon-javascript-plain colored"></i>
+                  </span>
+                  <h4>
+                    <strong>JavaScript</strong>
+                  </h4>
+                </div>
+                 <div class="col mb-5 mb-lg-0">
+                  <span class="service-icon rounded-circle mx-auto mb-1 mt-3">
+                    <i class="devicon-jquery-plain-wordmark colored"></i>
+                  </span>
+                  <h4>
+                    <strong>jQuery</strong>
+                  </h4>
+                </div>
+                <div class="col mb-5 mb-lg-0">
+                  <span class="service-icon rounded-circle mx-auto mb-1 mt-3">
+                    <i class="devicon-bootstrap-plain colored"></i>
+                  </span>
+                  <h4>
+                    <strong>Bootstrap</strong>
+                  </h4>
+                </div>
+                <div class="col mb-5 mb-lg-0">
+                  <span class="service-icon rounded-circle mx-auto mb-1 mt-3">
+                    <i class="devicon-handlebars-plain colored"></i>
+                  </span>
+                  <h4>
+                    <strong>Handlebars</strong>
+                  </h4>
+                </div>
+              </div>
+              <div class="row pt-5 ">
+                <div class="col mb-5 mb-md-0">
+                  <span class="service-icon rounded-circle mx-auto mb-1 mt-3">
+                    <i class="devicon-nodejs-plain colored"></i>
+                  </span>
+                  <h4>
+                    <strong>Node.js</strong>
+                  </h4>
+                </div>
+                <div class="col mb-5 mb-md-0">
+                  <span class="service-icon rounded-circle mx-auto mb-1 mt-3">
+                    <i class="devicon-express-original-wordmark colored"></i>
+                  </span>
+                  <h4>
+                    <strong>Express</strong>
+                  </h4>
+                </div>              
+              <div class="col mb-5 mb-lg-0">
+                <span class="service-icon rounded-circle mx-auto mb-1 mt-3">
+                  <i class="devicon-react-original colored"></i>
+                </span>
+                <h4>
+                  <strong>React</strong>
+                </h4>
+              </div>
+              <div class="col mb-5 mb-md-0">
+                <span class="service-icon rounded-circle mx-auto mb-1 mt-3">
+                  <i class="devicon-mongodb-plain colored"></i>
+                </span>
+                <h4>
+                  <strong>MongoDB</strong>
+                </h4>
+              </div>              
+                <div class="col mb-5 mb-md-0">
+                  <span class="service-icon rounded-circle mx-auto mb-1 mt-3">
+                    <i class="devicon-postgresql-plain colored"></i>
+                  </span>
+                  <h4>
+                    <strong>PostgreSQL</strong>
+                  </h4>
+                </div>
+
+                <div class="col mb-5 mb-md-0">
+                  <span class="service-icon rounded-circle mx-auto mb-1 mt-3">
+                    <i class="devicon-mysql-plain-wordmark colored"></i>
+                  </span>
+                  <h4>
+                    <strong>MySQL</strong>
+                  </h4>
+                </div>                                
+
+              </div>
+              <div class="row pt-5 ">
+                <div class="col mb-5 mb-md-0">
+                  <span class="service-icon rounded-circle mx-auto mb-1 mt-3">
+                    <i class="devicon-redux-original colored"></i>
+                  </span>
+                  <h4>
+                    <strong>Redux</strong>
+                  </h4>
+                </div>              
+              <div class="col mb-5 mb-lg-0">
+                <span class="service-icon rounded-circle mx-auto mb-1 mt-3">
+                  <i class="devicon-angularjs-plain colored"></i>
+                </span>
+                <h4>
+                  <strong>Angular.js</strong>
+                </h4>
+              </div>
+              <div class="col mb-5 mb-lg-0">
+                <span class="service-icon rounded-circle mx-auto mb-1 mt-3">
+                  <i class="devicon-vuejs-plain colored"></i>
+                </span>
+                <h4>
+                  <strong>Vue.js</strong>
+                </h4>
+              </div>
+              <div class="col mb-5 mb-lg-0">
+                <span class="service-icon rounded-circle mx-auto mb-1 mt-3">
+                  <i class="devicon-heroku-line colored"></i>
+                </span>
+                <h4>
+                  <strong>Angular.js</strong>
+                </h4>
+              </div>
+              <div class="col mb-5 mb-lg-0">
+                <span class="service-icon rounded-circle mx-auto mb-1 mt-3">
+                  <i class="devicon-python-plain colored"></i>
+                </span>
+                <h4>
+                  <strong>Python</strong>
+                </h4>
+              </div>                                          
+              <div class="col mb-5 mb-md-0">
+                <span class="service-icon rounded-circle mx-auto mb-1 mt-3">
+                  <i class="devicon-github-original colored"></i>
+                </span>
+                <h4>
+                  <strong>GitHub</strong>
+                </h4>
               </div>
             </div>
-          </aside>
+            </div>          </section>
           <!--END ASIDE SECTION-->
         </section>
-
+      </section>  
         <!--END WORK HISTORY SECTION-->
       </section>
-      <!--BEGIN PROJECTS SECTION-->
-      <section id="projects">
-        <article class="projects_text">
+      <section id="resume">
+        <article class="resume_text">
           <h2>My</h2>
-          <span class="give_me_space"><h2>Projects</h2></span>
+          <span class="give_me_space"><h2>Resume</h2></span>
         </article>
-        <section class="project_content">
+        <section class="contact_content">
           <article>
-            <figure>
-            <a href="http://www.themarceaus.net/Projects/RestaurantList/login.php/"
-              ><img class="project_img" alt="Restaurant List App" src="./images/restlist.png" width="300rem" height="225rem"
-            /></a>
-            <div class="card_lg">
-              <a href="http://www.themarceaus.net/Projects/RestaurantList/login.php/"><div class="card_text_lg">
-                <p>A fun side project I did to track restaurants that I would like to try. Userid/password: demo.</p>
-              </div>
-            </div></a>
-          <figcaption>Restaurant List App</figcaption>
-          </figure>
-          </article>
-          <article>
-            <figure>
-            <a href="https://unh-bootcamp-projects.github.io/project-1-group-c/">  
-            <img class="project_img" alt="A YELP spin-off" src="./images/notYelp.png" width="200" height="150" />
-              </a>
-            <div class="card_sm">
-              <a href="https://unh-bootcamp-projects.github.io/project-1-group-c/"><div class="card_text_sm"><p>An API consuming app similar to YELP.</p></div>
-            </div></a>
-            <figcaption>Fun with APIs</figcaption>
-            <figcaption><a href="https://github.com/UNH-Bootcamp-Projects/project-1-group-c" class="repoLink">Link to Repo</a></figcaption>
-          </figure>
-          </article>
-          <article>
-            <figure>
-              <a href="https://pmarceaujr.github.io/WeatherApp/">
-            <img class="project_img" alt="Weather Dashboard" src="./images/weather.png" width="200" height="200" />
+            <h4>Download my resume: </h4>
+            <a href="./includes/PaulMarceauResume_2021.pdf" download>
+              <img src="./images/downpdf.png" alt="Resume">
             </a>
-            <div class="card_sm">
-              <a href="https://pmarceaujr.github.io/WeatherApp/"><div class="card_text_sm">A fun API weather Dashboard app.</div>
-            </div></a>
-            <figcaption>JavaScript with dynamic HTML </figcaption>
-            <figcaption><a href="https://github.com/pmarceaujr/WeatherApp" class="repoLink">Link to Repo</a></figcaption>
-          </figure>
           </article>
-          <article>
-            <figure>
-              <a href="https://pmarceaujr.github.io/RockPaperScissors/">
-            <img class="project_img" alt="Rock Paper Scissors" src="./images/RPS.png" width="200" height="200" />
-          </a>
-            <div class="card_sm">
-              <a href="https://pmarceaujr.github.io/RockPaperScissors/"><div class="card_text_sm">My niece loves to play Rock Paper Scissors!</div>
-            </div></a>
-            <figcaption>Rock Paper Scissors</figcaption>
-            <figcaption><a href="https://github.com/pmarceaujr/RockPaperScissors" class="repoLink">Link to Repo</a></figcaption>
-          </figure>
-          </article>
-          <article>
-            <figure>
-              <a href="https://pmarceaujr.github.io/FunWithDice/">
-            <img class="project_img" alt="Fun With Dice" src="./images/funwithdice.png" width="200" height="200" />
-          </a>
-            <div class="card_sm">
-              <a href="https://pmarceaujr.github.io/FunWithDice/"><div class="card_text_sm">A silly dice game for my niece!</div>
-            </div></a>
-            <figcaption>Fun with dice</figcaption>
-            <figcaption><a href="http://github.com/pmarceaujr/FunWithDice/" class="repoLink">Link to Repo</a></figcaption>
-          </figure>
-          </article>
-          <article>
-            <figure>
-            <img class="project_img" alt="Github" src="./images/coming_soon.png" width="200" height="200" />
-            <div class="card_sm">
-              <div class="card_text_sm">A really cool app will be linked here soon!</div>
-            </div>
-            <figcaption>App Coming Soon</figcaption>
-          </figure>
-          </article>
+          
         </section>
-        <!--END PROJECTS SECTION-->
+        <!--END CONTACT SECTION-->        
+        <!--END WORK HISTORY SECTION-->
       </section>
+
       <!--BEGIN CONTACT SECTION-->
       <section id="contact">
         <article class="contact_text">
@@ -480,6 +407,9 @@
         <section class="contact_content">
           <article>
             <a href="tel:603-661-5742" class="anchor_text"><h4>CALL me on my Cell: 603.661.5742</h4></a><a href="tel:603-661-5742"><img class="contact_img" alt="Github" src="./images/cell.png" width="75" height="50" /></a>
+          </article>
+          <article>
+            <a href="mailto:paul@themarceaus.net" class="anchor_text" ><h4>eMail Me @:</h4></a><a href="mailto:paul@themarceaus.net"><img class="contact_img" alt="eMail" src="./images/email.png" width="70" height="50"/></a>
           </article>
           <article>
             <a href="https://github.com/pmarceaujr" class="anchor_text" ><h4>GIT me on Github</h4></a><a href="https://github.com/pmarceaujr"><img class="contact_img" alt="Github" src="./images/Github2.png" width="70" height="50"/></a>
@@ -504,10 +434,13 @@
         <a class="foot_nav" href="#bio">Home</a>
       </div>
       <div class="nav_foot_links">
-        <a class="foot_nav" href="#work">Resume</a>
+        <a class="foot_nav" href="#projects">Projects</a>
       </div>
       <div class="nav_foot_links">
-        <a class="foot_nav" href="#projects">Projects</a>
+        <a class="foot_nav" href="#work">Skills</a>
+      </div>      
+      <div class="nav_foot_links">
+        <a class="foot_nav" href="#resume">Resume</a>
       </div>
       <div class="nav_foot_links">
         <a class="foot_nav" href="#contact">Contact</a>
